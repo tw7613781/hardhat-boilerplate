@@ -52,7 +52,7 @@ describe("counter", function () {
       const { counter } = await loadFixture(deployCounterFixture);
       
       expect(await counter.count()).to.equal(0);
-      await expect(counter.dec()).to.be.revertedWith("Count is realdy 0");
+      await expect(counter.dec()).to.be.revertedWith("Count is alrealdy 0");
     })
   });
 });

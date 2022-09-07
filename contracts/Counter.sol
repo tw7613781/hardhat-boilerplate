@@ -13,7 +13,7 @@ contract Counter {
     }
 
     function dec() external {
-        require(count > 0, "Count is realdy 0");
+        require(count > 0, "Count is alrealdy 0");
         count -=1;
         emit CountUpdated(count, msg.sender);
     }
